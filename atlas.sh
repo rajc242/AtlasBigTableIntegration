@@ -408,8 +408,8 @@ function enable_sqoop_hook() {
 }
 
 function enable_bigtable() {
-  echo "atlas.graph.storage.hbase.ext.google.bigtable.instance.id=bns-atlas" >> ${ATLAS_CONFIG}
-  echo "atlas.graph.storage.hbase.ext.google.bigtable.project.id=rajppatel-dev" >> ${ATLAS_CONFIG}
+  echo "atlas.graph.storage.hbase.ext.google.bigtable.instance.id=atlas-bigtable-demo" >> ${ATLAS_CONFIG}
+  echo "atlas.graph.storage.hbase.ext.google.bigtable.project.id=YOUR_PORJECT_ID" >> ${ATLAS_CONFIG}
   echo "atlas.graph.storage.hbase.ext.hbase.client.connection.impl=com.google.cloud.bigtable.hbase2_x.BigtableConnection" >> ${ATLAS_CONFIG}
   echo "atlas.server.run.setup.on.start=false" >> ${ATLAS_CONFIG}
   
